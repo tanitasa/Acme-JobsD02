@@ -26,6 +26,11 @@
       		<acme:menu-suboption code="master.menu.anonymous.favourite-link-damian" action="https://www.github.com/"/>
       		<acme:menu-suboption code="master.menu.anonymous.favourite-link-victor" action="https://www.youtube.com/"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.requests.list" action="/authenticated/requests/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.offers.list" action="/authenticated/offer/list"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>

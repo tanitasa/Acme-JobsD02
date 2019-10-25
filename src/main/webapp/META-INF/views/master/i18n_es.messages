@@ -35,6 +35,12 @@ master.menu.anonymous.favourite-link-gonzalo = Enlace Gonzalo
 master.menu.anonymous.favourite-link-damian = Enlace Damian
 master.menu.anonymous.favourite-link-victor = Enlace Victor
 
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.requests.list = Lista de peticiones
+master.menu.authenticated.offers.list = Lista de ofertas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
