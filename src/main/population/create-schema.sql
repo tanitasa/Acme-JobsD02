@@ -38,6 +38,18 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `requests` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime,
+        `deadline` datetime,
+        `description` varchar(255),
+        `reward` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,
