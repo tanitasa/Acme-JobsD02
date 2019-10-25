@@ -1,5 +1,5 @@
 
-package acme.entities.requests;
+package acme.entities.offers;
 
 import java.util.Date;
 
@@ -18,7 +18,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Requests extends DomainEntity {
+public class Offer extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -26,9 +26,9 @@ public class Requests extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
 
-	//Following : RXXXX-99999
+	//Following : OXXXX-99999
 	@NotBlank
-	@Pattern(regexp = "^R[a-zA-Z]{4}-[0-9]{5}$")
+	@Pattern(regexp = "^O[a-zA-Z]{4}-[0-9]{5}$")
 	private String				ticker;
 
 	@NotBlank
@@ -45,7 +45,10 @@ public class Requests extends DomainEntity {
 	private String				description;
 
 	@NotNull
-	private double				reward;
+	private double				minReward;
+
+	@NotNull
+	private double				maxReward;
 
 	// Derived attributes -----------------------------------------------------
 

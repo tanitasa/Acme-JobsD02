@@ -24,7 +24,7 @@
 		<property name="creationMoment" value="2019/05/10 20:55" />
 		<property name="deadline" value="2019/05/10 20:55" />
 		<property name="description" value="descr request 1" />
-		<property name="reward" value="reward request 1" />						
+		<property name="reward" value="105.8" />						
   	</bean>
   	
   	<bean id="request2" class="acme.entities.requests.Requests">
@@ -33,7 +33,7 @@
 		<property name="creationMoment" value="2019/07/10 18:25" />
 		<property name="deadline" value="2020/05/05 17:55" />
 		<property name="description" value="descr request 2" />
-		<property name="reward" value="reward request 2" />						
+		<property name="reward" value="95.5" />						
   	</bean>
   	
   	<bean id="request3" class="acme.entities.requests.Requests">
@@ -42,7 +42,7 @@
 		<property name="creationMoment" value="2019/08/10 20:30" />
 		<property name="deadline" value="2020/03/05 08:35" />
 		<property name="description" value="descr request 3" />
-		<property name="reward" value="reward request 3" />						
+		<property name="reward" value="90.0" />						
   	</bean>
   	
   	<bean id="request4" class="acme.entities.requests.Requests">
@@ -51,7 +51,7 @@
 		<property name="creationMoment" value="2019/09/10 09:20" />
 		<property name="deadline" value="2020/02/12 23:55" />
 		<property name="description" value="descr request 4" />
-		<property name="reward" value="reward request 4" />						
+		<property name="reward" value="120.7" />						
   	</bean>
   	
   	<bean id="request5" class="acme.entities.requests.Requests">
@@ -60,7 +60,58 @@
 		<property name="creationMoment" value="2019/03/10 10:55" />
 		<property name="deadline" value="2020/05/10 10:55" />
 		<property name="description" value="descr request 5" />
-		<property name="reward" value="reward request 5" />						
+		<property name="reward" value="80.5" />						
+  	</bean>
+  	
+  	<!-- Offers -->
+	<bean id="offer1" class="acme.entities.offers.Offer">
+		<property name="ticker" value="OAaBb-12345" />
+		<property name="title" value="Offer 1" />
+		<property name="creationMoment" value="2019/05/10 20:55" />
+		<property name="deadline" value="2019/05/10 20:55" />
+		<property name="description" value="descr offer 1" />
+		<property name="minReward" value="80.5" />	
+		<property name="maxReward" value="100.0" />						
+  	</bean>
+  	
+  	<bean id="offer2" class="acme.entities.offers.Offer">
+		<property name="ticker" value="OTyUj-89756" />
+		<property name="title" value="Offer 2" />
+		<property name="creationMoment" value="2019/07/10 18:25" />
+		<property name="deadline" value="2020/05/05 17:55" />
+		<property name="description" value="descr offer 2" />
+		<property name="minReward" value="70.5" />	
+		<property name="maxReward" value="90.0" />						
+  	</bean>
+  	
+  	<bean id="offer3" class="acme.entities.offers.Offer">
+		<property name="ticker" value="OFgHb-17845" />
+		<property name="title" value="Offer 3" />
+		<property name="creationMoment" value="2019/08/10 20:30" />
+		<property name="deadline" value="2020/03/05 08:35" />
+		<property name="description" value="descr offer 3" />
+		<property name="minReward" value="80.0" />	
+		<property name="maxReward" value="100.0" />					
+  	</bean>
+  	
+  	<bean id="offer4" class="acme.entities.offers.Offer">
+		<property name="ticker" value="OACcb-10045" />
+		<property name="title" value="Offer 4" />
+		<property name="creationMoment" value="2019/09/10 09:20" />
+		<property name="deadline" value="2020/02/12 23:55" />
+		<property name="description" value="descr offer 4" />
+		<property name="minReward" value="100.5" />	
+		<property name="maxReward" value="130.0" />						
+  	</bean>
+  	
+  	<bean id="offer5" class="acme.entities.offers.Offer">
+		<property name="ticker" value="OAcBb-12385" />
+		<property name="title" value="Offer 5" />
+		<property name="creationMoment" value="2019/03/10 10:55" />
+		<property name="deadline" value="2020/05/10 10:55" />
+		<property name="description" value="descr offer 5" />
+		<property name="minReward" value="75.75" />	
+		<property name="maxReward" value="100.8" />					
   	</bean>
 
 </beans>

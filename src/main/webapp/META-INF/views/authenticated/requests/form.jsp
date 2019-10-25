@@ -21,7 +21,7 @@
 	<acme:form-moment code="authenticated.request.form.label.creationMoment" path="creationMoment"/>
 	<acme:form-moment code="authenticated.request.form.label.deadline" path="deadline"/>
 	<acme:form-textbox code="authenticated.request.form.label.description" path="description"/>
-	<acme:form-textbox code="authenticated.request.form.label.reward" path="reward"/>
+	<acme:form-double code="authenticated.request.form.label.reward" path="reward"/>
 	
 	<acme:form-return code="authenticated.request.form.button.return"/>
 </acme:form>

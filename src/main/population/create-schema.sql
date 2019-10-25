@@ -29,6 +29,19 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime,
+        `deadline` datetime,
+        `description` varchar(255),
+        `max_reward` double precision not null,
+        `min_reward` double precision not null,
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -44,7 +57,7 @@
         `creation_moment` datetime,
         `deadline` datetime,
         `description` varchar(255),
-        `reward` varchar(255),
+        `reward` double precision not null,
         `ticker` varchar(255),
         `title` varchar(255),
         primary key (`id`)
