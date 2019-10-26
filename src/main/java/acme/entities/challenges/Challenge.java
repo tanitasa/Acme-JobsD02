@@ -2,14 +2,12 @@
 package acme.entities.challenges;
 
 import java.util.Date;
-import java.util.Map;
 
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -36,9 +34,9 @@ public class Challenge extends DomainEntity {
 	@NotBlank
 	private String				description;
 
-	@NotBlank
-	@Pattern(regexp = "^GOLD|SILVER|BRONZE$")
-	private Map<String, Double>	goals;
+	//	@NotBlank
+	//	@Pattern(regexp = "^GOLD|SILVER|BRONZE$")
+	//	private Map<String, Double>	goals;
 
 	// Derived attributes -----------------------------------------------------
 
