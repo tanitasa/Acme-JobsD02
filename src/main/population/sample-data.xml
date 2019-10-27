@@ -175,7 +175,59 @@
 		<property name="stars" value="4" />		
   	</bean>
   	
+  	<bean id="challenge1" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Challenge 1" />
+		<property name="deadline" value="2020/05/10 10:55" />
+		<property name="description" value="descr challenge 1" />
+		<property name="goals">
+        <map>
+            <entry key="GOLD" value="100.0"/>
+        </map>
+        </property>
+  	</bean>
   	
+  	  	<bean id="challenge2" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Challenge 2" />
+		<property name="deadline" value="2020/05/10 10:56" />
+		<property name="description" value="descr challenge 2" />
+		<property name="goals">
+        <map>
+            <entry key="GOLD" value="200.0"/>
+        </map>
+        </property>
+  	</bean>
   	
+  	  	<bean id="challenge3" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Challenge 3" />
+		<property name="deadline" value="2020/05/10 10:57" />
+		<property name="description" value="descr challenge 3" />
+		<property name="goals">
+        <map>
+            <entry key="GOLD" value="300.0"/>
+        </map>
+        </property>
+  	</bean>
+  	
+  	  	<bean id="challenge4" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Challenge 4" />
+		<property name="deadline" value="2020/05/10 10:59" />
+		<property name="description" value="descr challenge 4" />
+		<property name="goals">
+        <map>
+            <entry key="GOLD" value="400.0"/>
+        </map>
+        </property>
+  	</bean>
+  	
+  	  	<bean id="challenge5" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Challenge 5" />
+		<property name="deadline" value="2020/05/10 10:55" />
+		<property name="description" value="descr challenge 5" />
+		<property name="goals">
+        <map>
+            <entry key="GOLD" value="500.0"/>
+        </map>
+        </property>
+  	</bean>
 
 </beans>
