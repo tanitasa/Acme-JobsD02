@@ -113,5 +113,69 @@
 		<property name="minReward" value="75.75" />	
 		<property name="maxReward" value="100.8" />					
   	</bean>
+  	
+  	<!-- Company Records -->
+	<bean id="companyRecord1" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Booket" />
+		<property name="sector" value="Library" />
+		<property name="ceoName" value="Koushun Takami" />
+		<property name="description" value="Company dedicated to the publication of horror books" />
+		<property name="web" value="https://www.planetadelibros.com/editorial/booket/22" />
+		<property name="phoneNumber" value="+15 (1111) 548931" />	
+		<property name="email" value="booket@hotmail.com" />	
+		<property name="isIncorporated" value="true" />
+		<property name="stars" value="3" />		
+  	</bean>
+  	
+  	<bean id="companyRecord2" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="La Media Inglesa" />
+		<property name="sector" value="Periodismo" />
+		<property name="ceoName" value="Ilie Oleart" />
+		<property name="description" value="Company dedicated to publish videos in Youtube about english football" />
+		<property name="web" value="http://lamediainglesa.com/" />
+		<property name="phoneNumber" value="+151 (5436) 9873841" />	
+		<property name="email" value="lamediainglesa@hotmail.com" />	
+		<property name="isIncorporated" value="false" />
+		<property name="stars" value="5" />		
+  	</bean>
+  	
+  	<bean id="companyRecord3" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Formula 1" />
+		<property name="sector" value="Sports" />
+		<property name="ceoName" value="John Baltron" />
+		<property name="description" value="Company dedicated to F1" />
+		<property name="web" value="https://www.formula1.com/" />
+		<property name="phoneNumber" value="+11 (33) 99911122" />	
+		<property name="email" value="f1@hotmail.com" />	
+		<property name="isIncorporated" value="true" />
+		<property name="stars" value="4" />		
+  	</bean>
+  	
+  	<bean id="companyRecord4" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Toshiba" />
+		<property name="sector" value="Technology" />
+		<property name="ceoName" value="Hakuna Matata" />
+		<property name="description" value="Create amazings products" />
+		<property name="web" value="https://www.toshiba.es/" />
+		<property name="phoneNumber" value="+1 (1) 223843933" />	
+		<property name="email" value="toshiba@hotmail.com" />	
+		<property name="isIncorporated" value="true" />
+		<property name="stars" value="1" />		
+  	</bean>
+  	
+  	<bean id="companyRecord5" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="MSI" />
+		<property name="sector" value="Technology" />
+		<property name="ceoName" value="Takuma Sato" />
+		<property name="description" value="Create amazings and perfect products" />
+		<property name="web" value="https://es.msi.com/" />
+		<property name="phoneNumber" value="+115 (7777) 1234567" />	
+		<property name="email" value="msi@hotmail.com" />	
+		<property name="isIncorporated" value="false" />
+		<property name="stars" value="4" />		
+  	</bean>
+  	
+  	
+  	
 
 </beans>

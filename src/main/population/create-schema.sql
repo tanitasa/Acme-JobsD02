@@ -20,6 +20,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `company_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `ceo_name` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `is_incorporated` bit,
+        `name` varchar(255),
+        `phone_number` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
+        `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -32,8 +47,8 @@
     create table `offer` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime,
-        `deadline` datetime,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
         `description` varchar(255),
         `max_reward` double precision not null,
         `min_reward` double precision not null,
@@ -54,8 +69,8 @@
     create table `requests` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime,
-        `deadline` datetime,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
         `description` varchar(255),
         `reward` double precision not null,
         `ticker` varchar(255),
