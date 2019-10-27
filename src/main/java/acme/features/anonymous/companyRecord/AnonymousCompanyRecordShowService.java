@@ -19,7 +19,7 @@ public class AnonymousCompanyRecordShowService implements AbstractShowService<An
 	private AnonymousCompanyRecordRepository repository;
 
 
-	// AbstractShowService<Authenticated, Request> interface ---------------
+	// AbstractShowService<Authenticated, Challenge> interface ---------------
 
 	@Override
 	public boolean authorise(final Request<CompanyRecord> request) {
@@ -34,23 +34,18 @@ public class AnonymousCompanyRecordShowService implements AbstractShowService<An
 		assert entity != null;
 		assert model != null;
 
-		if (entity.getIsIncorporated().equals(true)) {
-			entity.setName(entity.getName() + ",INC");
-		} else {
-			entity.setName(entity.getName() + ",LLC");
-		}
-
 		request.unbind(entity, model, "name", "sector", "ceoName", "description", "web", "phoneNumber", "email", "isIncorporated", "stars");
+
 	}
 
 	@Override
-	public CompanyRecord findOne(final Request<CompanyRecord> request) {
-		assert request != null;
+	public CompanyRecord findOne(final Request<CompanyRecord> companyRecord) {
+		assert companyRecord != null;
 
 		CompanyRecord result;
 		int id;
 
-		id = request.getModel().getInteger("id");
+		id = companyRecord.getModel().getInteger("id");
 		result = this.repository.findOneById(id);
 
 		return result;

@@ -19,11 +19,11 @@
 <tiles-definitions>
 
 	<definition name="anonymous/company-record/list" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/companyRecord/list.jsp" />
+		<put-attribute name="body" type="template" value="../anonymous/company-record/list.jsp" />
 	</definition>
 	
-	<definition name="anonymous/company-record/show" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/companyRecord/form.jsp" />
+	<definition name="anonymous/company-record/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/company-record/form.jsp" />
 	</definition>
 	
 </tiles-definitions>
