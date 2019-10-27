@@ -20,6 +20,22 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime,
+        `description` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `challenge_goals` (
+       `challenge_id` integer not null,
+        `goals` double precision,
+        `goal` varchar(255) not null,
+        primary key (`challenge_id`, `goal`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -98,6 +114,11 @@
        add constraint FK_h52w0f3wjoi68b63wv9vwon57 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `challenge_goals` 
+       add constraint `FK20gqyf0erpkp9ru1td5q2tx6e` 
+       foreign key (`challenge_id`) 
+       references `challenge` (`id`);
 
     alter table `consumer` 
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 

@@ -19,6 +19,6 @@
 	<acme:list-column code="authenticated.challenge.list.label.title" path="title"/>
 	<acme:list-column code="authenticated.challenge.list.label.deadline" path="deadline"/>
 	<acme:list-column code="authenticated.challenge.list.label.description" path="description"/>
-	<acme:list-column code="authenticated.challenge.list.label.goals" path="goals"/>
-
+<%-- 	<acme:list-column code="authenticated.challenge.list.label.goals" path="goals"/>
+ --%>
 </acme:list>

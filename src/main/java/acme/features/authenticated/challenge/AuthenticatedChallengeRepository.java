@@ -12,10 +12,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedChallengeRepository extends AbstractRepository {
 
-	@Query("select o from Offer o where o.id = ?1")
+	@Query("select c from Challenge c where c.id = ?1")
 	Challenge findOneById(int id);
 
-	@Query("select o from Offer o")
+	@Query("select c from Challenge c")
 	Collection<Challenge> findManyAll();
 
 }

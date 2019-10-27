@@ -19,7 +19,7 @@ public class AuthenticatedChallengeShowService implements AbstractShowService<Au
 	private AuthenticatedChallengeRepository repository;
 
 
-	// AbstractShowService<Authenticated, Request> interface ---------------
+	// AbstractShowService<Authenticated, Challenge> interface ---------------
 
 	@Override
 	public boolean authorise(final Request<Challenge> request) {

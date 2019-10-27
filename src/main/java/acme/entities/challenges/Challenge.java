@@ -2,7 +2,6 @@
 package acme.entities.challenges;
 
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 
 import javax.persistence.ElementCollection;
@@ -12,7 +11,10 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -39,17 +41,12 @@ public class Challenge extends DomainEntity {
 	@NotBlank
 	private String				description;
 
-	//	@NotBlank
-	//	@ElementCollection(targetClass = String.class)
-	//	@MapKeyColumn(name = "goal")
-	//	@Pattern(regexp = "^GOLD|SILVER|BRONZE$")
-	//	private Map<String, Double>	goals;
-
-	@NotBlank
-	@Pattern(regexp = "^GOLD|SILVER|BRONZE$")
-	@ElementCollection(targetClass = String.class)
+	@NotNull
+	//@Pattern(regexp = "^GOLD|SILVER|BRONZE$")
+	@ElementCollection
 	@MapKeyColumn(name = "goal")
-	private Map<String, Double>	goals				= new HashMap<String, Double>();
+	@Fetch(FetchMode.JOIN)
+	private Map<String, Double>	goals;
 
 	// Derived attributes -----------------------------------------------------
 

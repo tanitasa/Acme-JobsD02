@@ -40,6 +40,7 @@ master.menu.anonymous.favourite-link-victor = Link Victor
 master.menu.authenticated = Authenticated
 master.menu.authenticated.requests.list = Requests list
 master.menu.authenticated.offers.list = Offers list
+master.menu.authenticated.challenges.list = Challenges list
 
 # master.menu.administrator ###################################################
 

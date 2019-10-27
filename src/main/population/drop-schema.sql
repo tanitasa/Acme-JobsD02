@@ -11,6 +11,10 @@
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
 
+    alter table `challenge_goals` 
+       drop 
+       foreign key `FK20gqyf0erpkp9ru1td5q2tx6e`;
+
     alter table `consumer` 
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
@@ -24,6 +28,10 @@
     drop table if exists `anonymous`;
 
     drop table if exists `authenticated`;
+
+    drop table if exists `challenge`;
+
+    drop table if exists `challenge_goals`;
 
     drop table if exists `consumer`;
 

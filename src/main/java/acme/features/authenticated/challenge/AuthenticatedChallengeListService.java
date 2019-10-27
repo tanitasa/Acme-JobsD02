@@ -21,7 +21,7 @@ public class AuthenticatedChallengeListService implements AbstractListService<Au
 	private AuthenticatedChallengeRepository repository;
 
 
-	// AbstractListService<Authenticated, Request> interface ---------------
+	// AbstractListService<Authenticated, Challenge> interface ---------------
 
 	@Override
 	public boolean authorise(final Request<Challenge> challenge) {
