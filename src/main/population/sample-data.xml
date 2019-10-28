@@ -229,5 +229,42 @@
         </map>
         </property>
   	</bean>
+  	
+  	<!-- Announcement -->
+  	
+  	<bean id="announcement1" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement 1" />
+		<property name="creationMoment" value="2019/09/10 10:20" />
+		<property name="link" value="https://www.amazon.es" />	
+		<property name="description" value="descr announcement 1" />					
+  	</bean>
+  	
+  	<bean id="announcement2" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement 2" />
+		<property name="creationMoment" value="2019/09/10 13:20" />
+		<property name="link" value="https://www.ebay.es" />	
+		<property name="description" value="descr announcement 2" />					
+  	</bean>
+  	
+  	<bean id="announcement3" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement 3" />
+		<property name="creationMoment" value="2019/09/11 10:20" />
+		<property name="link" value="https://www.amazon.es" />	
+		<property name="description" value="descr announcement 3" />					
+  	</bean>
+  	
+  	<bean id="announcement4" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement 4" />
+		<property name="creationMoment" value="2019/09/11 14:20" />
+		<property name="link" value="https://www.ebay.es" />	
+		<property name="description" value="descr announcement 4" />					
+  	</bean>
+  	
+  	<bean id="announcement5" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement 5" />
+		<property name="creationMoment" value="2019/09/12 10:20" />
+		<property name="link" value="https://www.amazon.es" />	
+		<property name="description" value="descr announcement 5" />					
+  	</bean>
 
 </beans>
