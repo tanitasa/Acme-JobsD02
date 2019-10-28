@@ -248,7 +248,7 @@
   	
   	<bean id="announcement3" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Announcement 3" />
-		<property name="creationMoment" value="2019/09/11 10:20" />
+		<property name="creationMoment" value="2019/10/11 10:20" />
 		<property name="link" value="https://www.amazon.es" />	
 		<property name="description" value="descr announcement 3" />					
   	</bean>

@@ -9,7 +9,7 @@
     create table `announcement` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime(6),
+        `creation_moment` datetime,
         `description` varchar(255),
         `link` varchar(255),
         `title` varchar(255),
@@ -33,7 +33,7 @@
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
-        `deadline` datetime(6),
+        `deadline` datetime,
         `description` varchar(255),
         `title` varchar(255),
         primary key (`id`)
@@ -73,8 +73,8 @@
     create table `offer` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime(6),
-        `deadline` datetime(6),
+        `creation_moment` datetime,
+        `deadline` datetime,
         `description` varchar(255),
         `max_reward` double precision not null,
         `min_reward` double precision not null,
@@ -95,8 +95,8 @@
     create table `requests` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime(6),
-        `deadline` datetime(6),
+        `creation_moment` datetime,
+        `deadline` datetime,
         `description` varchar(255),
         `reward` double precision not null,
         `ticker` varchar(255),
