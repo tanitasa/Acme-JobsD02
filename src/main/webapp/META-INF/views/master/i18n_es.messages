@@ -42,6 +42,7 @@ master.menu.authenticated = Autenticado
 master.menu.authenticated.requests.list = Lista de peticiones
 master.menu.authenticated.offers.list = Lista de ofertas
 master.menu.authenticated.challenges.list = Lista de desafios
+master.menu.authenticated.companyRecords.list = Lista de compañias
 
 # master.menu.administrator ###################################################
 
