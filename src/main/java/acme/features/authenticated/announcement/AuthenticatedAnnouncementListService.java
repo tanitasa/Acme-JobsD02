@@ -1,7 +1,10 @@
 
 package acme.features.authenticated.announcement;
 
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,9 +45,21 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 	@Override
 	public Collection<Announcement> findMany(final Request<Announcement> request) {
 		assert request != null;
-		Collection<Announcement> result;
+		Collection<Announcement> result = new ArrayList<Announcement>();
+		Collection<Announcement> aux;
 
-		result = this.repository.findManyAll();
+		aux = this.repository.findManyAll();
+
+		Date fecha = new Date();
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(fecha);
+		calendar.add(Calendar.MONTH, -1);
+
+		for (Announcement a : aux) {
+			if (!a.getCreationMoment().before(calendar.getTime())) {
+				result.add(a);
+			}
+		}
 
 		return result;
 	}
