@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
+  <help_text/>
   <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -182,7 +183,7 @@ bg=orange</panel_attributes>
       <x>441</x>
       <y>266</y>
       <w>140</w>
-      <h>63</h>
+      <h>49</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
 Provider
@@ -295,5 +296,114 @@ m1=1
 m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>7</x>
+      <y>350</y>
+      <w>308</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ ticker: String {Pattern, NotBlank} 
++ title: String {NotBlank} 
++ creationMoment: Date {TemporalType(TIMESTAMP),Past} 
++ deadline: Date {TemporalType(TIMESTAMP)} 
++ description: String {NotBlank} 
++ minReward: double {NotNull} 
++ maxReward: double {NotNull} </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>7</x>
+      <y>462</y>
+      <w>308</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Request
+--
++ ticker: String {Pattern, NotBlank} 
++ title: String {NotBlank} 
++ creationMoment: Date {TemporalType(TIMESTAMP),Past} 
++ deadline: Date {TemporalType(TIMESTAMP)} 
++ description: String {NotBlank} 
++ reward: double {NotNull} 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>7</x>
+      <y>574</y>
+      <w>308</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ title: String {NotBlank} 
++ creationMoment: Date {TemporalType(TIMESTAMP),Past} 
++ link: String [0..1] {URL}
++ description: String {NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>350</y>
+      <w>245</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String {NotBlank} 
++ deadline: Date {TemporalType(TIMESTAMP)} 
++ goals: Map&lt;String,Double&gt; {NotNull}
++ description: String {NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>434</y>
+      <w>245</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>CompanyRecord
+--
++ name: String {NotBlank} 
++ sector: String {NotBlank} 
++ ceoName: String {NotBlank} 
++ description: String {NotBlank} 
++ web: String {NotBlank, URL} 
++ phoneNumber: String {NotBlank, Pattern} 
++ email: String {NotBlank, Pattern} 
++ isIncorporated: Boolean
++ stars: Integer {NotNull, Range(0-5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>574</y>
+      <w>238</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>InvestorRecord
+--
++ name: String {NotBlank} 
++ sector: String {NotBlank}
++ investingStatement: String {NotBlank} 
++ stars: Integer {NotNull, Range(0-5)}</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
