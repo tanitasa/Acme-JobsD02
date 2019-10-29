@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.challenge;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,11 +42,18 @@ public class AuthenticatedChallengeListService implements AbstractListService<Au
 	}
 
 	@Override
-	public Collection<Challenge> findMany(final Request<Challenge> challenge) {
-		assert challenge != null;
-		Collection<Challenge> result;
+	public Collection<Challenge> findMany(final Request<Challenge> request) {
+		assert request != null;
+		Collection<Challenge> result = new ArrayList<Challenge>();
+		Collection<Challenge> aux;
 
-		result = this.repository.findManyAll();
+		aux = this.repository.findManyAll();
+
+		for (Challenge a : aux) {
+			if (a.getDeadline().after(new Date())) {
+				result.add(a);
+			}
+		}
 
 		return result;
 	}

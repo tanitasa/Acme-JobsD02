@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.request;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,9 +44,16 @@ public class AuthenticatedRequestsListService implements AbstractListService<Aut
 	@Override
 	public Collection<Requests> findMany(final Request<Requests> request) {
 		assert request != null;
-		Collection<Requests> result;
+		Collection<Requests> result = new ArrayList<Requests>();
+		Collection<Requests> aux;
 
-		result = this.repository.findManyAll();
+		aux = this.repository.findManyAll();
+
+		for (Requests a : aux) {
+			if (a.getDeadline().after(new Date())) {
+				result.add(a);
+			}
+		}
 
 		return result;
 	}

@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.offer;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,9 +44,16 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 	@Override
 	public Collection<Offer> findMany(final Request<Offer> request) {
 		assert request != null;
-		Collection<Offer> result;
+		Collection<Offer> result = new ArrayList<Offer>();
+		Collection<Offer> aux;
 
-		result = this.repository.findManyAll();
+		aux = this.repository.findManyAll();
+
+		for (Offer a : aux) {
+			if (a.getDeadline().after(new Date())) {
+				result.add(a);
+			}
+		}
 
 		return result;
 	}
