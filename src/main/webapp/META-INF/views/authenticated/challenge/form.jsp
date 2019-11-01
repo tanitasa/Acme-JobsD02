@@ -20,27 +20,33 @@
 	<acme:form-textbox code="authenticated.challenge.form.label.title" path="title" />
 	<acme:form-moment code="authenticated.challenge.form.label.deadline" path="deadline" />
 	<acme:form-textbox code="authenticated.challenge.form.label.description" path="description" />
-    <acme:form-textbox code="authenticated.challenge.form.label.gold" path="gold" />
-	<acme:form-double code="authenticated.challenge.form.label.rewardGol" path="rewardGold" />
-	<acme:form-textbox code="authenticated.challenge.form.label.silver" path="Silver" />
+  <%--   <acme:form-textbox code="authenticated.challenge.form.label.gold" path="gold" />
+	<acme:form-double code="authenticated.challenge.form.label.rewardGold" path="rewardGold" />
+	<acme:form-textbox code="authenticated.challenge.form.label.silver" path="silver" />
 	<acme:form-double code="authenticated.challenge.form.label.rewardSilver" path="rewardSilver" />
 	<acme:form-textbox code="authenticated.challenge.form.label.bronze" path="bronze" />
-	<acme:form-double code="authenticated.challenge.form.label.rewardSilver" path="rewardBronze" />
+	<acme:form-double code="authenticated.challenge.form.label.rewardSilver" path="rewardBronze" /> --%>
 
 
 
-	<%-- <table border="1" >
-	<TR><th>Goal</th><Th>Reward</th></Tr>
-
-	<c:forEach var="goal" items="${goals}" >
+ <table border="1" >
+	
+<tr><th>GOAL</th><th>REWARD</th></tr>
+	
 		<tr>
-			<td><c:out value="${goal.key}"/></td> <td><c:out value="${goal.value}"/></td>
+			<td><acme:form-textbox code="" path="gold" /></td><td><acme:form-double code="" path="rewardGold" /> </td>
+		</tr>
+		<tr>
+			<td><acme:form-textbox code="" path="silver" /> </td><td><acme:form-double code="" path="rewardSilver" /> </td>
+		</tr>
+		<tr>
+			<td><acme:form-textbox code="" path="bronze" /></td><td><acme:form-double code="" path="rewardBronze" /> </td>
 		</tr>
 		
-	</c:forEach>
+	
 	</table>
 	<br> 
- --%>
+ 
 
 	<acme:form-return code="authenticated.challenge.form.button.return" />
 </acme:form>

@@ -29,4 +29,5 @@ authenticated.challenge.form.label.silver = Plata
 authenticated.challenge.form.label.rewardSilver = Puntuación Plata
 authenticated.challenge.form.label.bronze = Bronce
 authenticated.challenge.form.label.rewardBronze = Puntuación Bronce
+authenticated.challenge.form.label.goals = Metas
 authenticated.challenge.form.button.return = Volver
