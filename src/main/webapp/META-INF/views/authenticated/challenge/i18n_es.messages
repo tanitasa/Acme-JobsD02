@@ -12,10 +12,21 @@
 authenticated.challenge.list.label.title = Titulo
 authenticated.challenge.list.label.deadline = Fecha limite
 authenticated.challenge.list.label.description = Descripcion
+authenticated.challenge.list.label.gold = Oro
+authenticated.challenge.list.label.rewardGold = Puntuación Oro
+authenticated.challenge.list.label.silver = Plata
+authenticated.challenge.list.label.rewardSilver = Puntuación Plata
+authenticated.challenge.list.label.bronze = Bronce
+authenticated.challenge.list.label.rewardBronze = Puntuación Bronce
 authenticated.challenge.list.label.goals = Metas
 
 authenticated.challenge.form.label.deadline = Fecha limite
 authenticated.challenge.form.label.title = Titulo
 authenticated.challenge.form.label.description = Descripcion
-authenticated.challenge.form.label.goals = Metas
+authenticated.challenge.form.label.gold = Oro
+authenticated.challenge.form.label.rewardGold = Puntuación Oro
+authenticated.challenge.form.label.silver = Plata
+authenticated.challenge.form.label.rewardSilver = Puntuación Plata
+authenticated.challenge.form.label.bronze = Bronce
+authenticated.challenge.form.label.rewardBronze = Puntuación Bronce
 authenticated.challenge.form.button.return = Volver
