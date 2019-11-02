@@ -9,7 +9,7 @@
     create table `announcement` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime,
+        `creation_moment` datetime(6),
         `description` varchar(255),
         `link` varchar(255),
         `title` varchar(255),
@@ -33,17 +33,19 @@
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
-        `deadline` datetime,
+        `bronze_en` varchar(255),
+        `bronze_es` varchar(255),
+        `deadline` datetime(6),
         `description` varchar(255),
+        `gold_en` varchar(255),
+        `gold_es` varchar(255),
+        `reward_bronze` double precision not null,
+        `reward_gold` double precision not null,
+        `reward_silver` double precision not null,
+        `silver_en` varchar(255),
+        `silver_es` varchar(255),
         `title` varchar(255),
         primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `challenge_goals` (
-       `challenge_id` integer not null,
-        `goals` double precision,
-        `goal` varchar(255) not null,
-        primary key (`challenge_id`, `goal`)
     ) engine=InnoDB;
 
     create table `company_record` (
@@ -73,8 +75,8 @@
     create table `offer` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime,
-        `deadline` datetime,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
         `description` varchar(255),
         `max_reward` double precision not null,
         `min_reward` double precision not null,
@@ -95,8 +97,8 @@
     create table `requests` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime,
-        `deadline` datetime,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
         `description` varchar(255),
         `reward` double precision not null,
         `ticker` varchar(255),
@@ -139,11 +141,6 @@
        add constraint FK_h52w0f3wjoi68b63wv9vwon57 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
-
-    alter table `challenge_goals` 
-       add constraint `FK20gqyf0erpkp9ru1td5q2tx6e` 
-       foreign key (`challenge_id`) 
-       references `challenge` (`id`);
 
     alter table `consumer` 
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 

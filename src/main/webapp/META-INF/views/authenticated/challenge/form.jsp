@@ -10,6 +10,11 @@
 - they accept any liabilities with respect to them.
 --%>
 
+<%@page import="java.util.Locale"%>
+<%@page import="acme.features.authenticated.challenge.AuthenticatedChallengeShowService"%>
+<%@page import="acme.features.authenticated.challenge.AuthenticatedChallengeListService"%>
+<%@page import="acme.framework.entities.Authenticated"%>
+<%@page import="acme.entities.challenges.Challenge"%>
 <%@page language="java"%>
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -20,32 +25,40 @@
 	<acme:form-textbox code="authenticated.challenge.form.label.title" path="title" />
 	<acme:form-moment code="authenticated.challenge.form.label.deadline" path="deadline" />
 	<acme:form-textbox code="authenticated.challenge.form.label.description" path="description" />
-  <%--   <acme:form-textbox code="authenticated.challenge.form.label.gold" path="gold" />
-	<acme:form-double code="authenticated.challenge.form.label.rewardGold" path="rewardGold" />
-	<acme:form-textbox code="authenticated.challenge.form.label.silver" path="silver" />
-	<acme:form-double code="authenticated.challenge.form.label.rewardSilver" path="rewardSilver" />
-	<acme:form-textbox code="authenticated.challenge.form.label.bronze" path="bronze" />
-	<acme:form-double code="authenticated.challenge.form.label.rewardSilver" path="rewardBronze" /> --%>
-
-
+<%-- <% String idioma = Locale.getDefault().toString(); %> --%>
 
  <table border="1" >
 	
-<tr><th>GOAL</th><th>REWARD</th></tr>
+<tr><th> <acme:message code="authenticated.challenge.form.label.goals" /></th> <th><acme:message code="authenticated.challenge.form.label.rewards" /></th></tr>
 	
+	<c:if test="${Locale.getDefault().toString()=='en'}">
 		<tr>
-			<td><acme:form-textbox code="" path="gold" /></td><td><acme:form-double code="" path="rewardGold" /> </td>
+    		<td><acme:form-textbox code="" path="goldEn" /></td><td><acme:form-double code="" path="rewardGold" /> </td>
+ 		 </tr>
+		<tr>
+			<td><acme:form-textbox code="" path="silverEn"  /> </td><td><acme:form-double code="" path="rewardSilver" /> </td>
 		</tr>
 		<tr>
-			<td><acme:form-textbox code="" path="silver" /> </td><td><acme:form-double code="" path="rewardSilver" /> </td>
+			<td><acme:form-textbox code="" path="bronzeEn" /></td><td><acme:form-double code="" path="rewardBronze" /> </td>
+		</tr>
+	</c:if>
+	
+	<c:if test="${Locale.getDefault().toString()=='es'}">
+			<tr>
+    		<td><acme:form-textbox code="" path="goldEs" /></td><td><acme:form-double code="" path="rewardGold" /> </td>
+ 		 </tr>
+		<tr>
+			<td><acme:form-textbox code="" path="silverEs"  /> </td><td><acme:form-double code="" path="rewardSilver" /> </td>
 		</tr>
 		<tr>
-			<td><acme:form-textbox code="" path="bronze" /></td><td><acme:form-double code="" path="rewardBronze" /> </td>
+			<td><acme:form-textbox code="" path="bronzeEs" /></td><td><acme:form-double code="" path="rewardBronze" /> </td>
 		</tr>
-		
+	</c:if>
 	
 	</table>
 	<br> 
+ 
+
  
 
 	<acme:form-return code="authenticated.challenge.form.button.return" />

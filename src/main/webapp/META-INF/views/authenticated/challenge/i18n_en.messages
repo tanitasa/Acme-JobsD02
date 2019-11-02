@@ -19,6 +19,7 @@ authenticated.challenge.list.label.rewardSilver = Reward Silver
 authenticated.challenge.list.label.bronze = Bronze
 authenticated.challenge.list.label.rewardBronze = Reward Bronze
 authenticated.challenge.list.label.goals = Goals
+authenticated.challenge.list.label.rewards = Rewards
 
 authenticated.challenge.form.label.title = Title
 authenticated.challenge.form.label.deadline = Deadline
@@ -30,4 +31,5 @@ authenticated.challenge.form.label.rewardSilver = Reward Silver
 authenticated.challenge.form.label.bronze = Bronze
 authenticated.challenge.form.label.rewardBronze = Reward Bronze
 authenticated.challenge.form.label.goals = Goals
+authenticated.challenge.form.label.rewards = Rewards
 authenticated.challenge.form.button.return = Return
