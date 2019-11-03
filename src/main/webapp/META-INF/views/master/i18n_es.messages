@@ -35,6 +35,7 @@ master.menu.anonymous.favourite-link-gonzalo = Enlace Gonzalo
 master.menu.anonymous.favourite-link-damian = Enlace Damian
 master.menu.anonymous.favourite-link-victor = Enlace Victor
 master.menu.anonymous.companyRecords.list = Lista de compañias
+master.menu.anonymous.investorRecords.list = Lista de Inversores
 master.menu.anonymous.announcement.list = Lista de anuncios
 # master.menu.authenticated #######################################################
 

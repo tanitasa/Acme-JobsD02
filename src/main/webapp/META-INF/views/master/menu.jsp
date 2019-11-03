@@ -26,6 +26,7 @@
       		<acme:menu-suboption code="master.menu.anonymous.favourite-link-damian" action="https://www.github.com/"/>
       		<acme:menu-suboption code="master.menu.anonymous.favourite-link-victor" action="https://www.youtube.com/"/>
       		<acme:menu-suboption code="master.menu.anonymous.companyRecords.list" action="/anonymous/company-record/list"/>
+      		<acme:menu-suboption code="master.menu.anonymous.investorRecords.list" action="/anonymous/investor-record/list"/>
       		<acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list"/>		
 		</acme:menu-option>
 		

@@ -175,6 +175,48 @@
 		<property name="stars" value="4" />		
   	</bean>
   	
+  	
+  	
+  	<!-- Investor Records -->
+  	
+  	
+  	<bean id="investorRecord1" class="acme.entities.investorRecords.InvestorRecord">
+  		<property name="name" value="Adidas" />
+  		<property name="sector" value="sports" />
+  		<property name="investingStatement" value="sportswear" />
+  		<property name="stars" value="5" />
+  	</bean>
+  	
+  	<bean id="investorRecord2" class="acme.entities.investorRecords.InvestorRecord">
+  		<property name="name" value="Mercadona" />
+  		<property name="sector" value="groceries" />
+  		<property name="investingStatement" value="food for people" />
+  		<property name="stars" value="3" />
+  	</bean>
+  	
+  	<bean id="investorRecord3" class="acme.entities.investorRecords.InvestorRecord">
+  		<property name="name" value="Nintendo" />
+  		<property name="sector" value="videogames" />
+  		<property name="investingStatement" value="fun games" />
+  		<property name="stars" value="5" />
+  	</bean>
+  	
+  	<bean id="investorRecord4" class="acme.entities.investorRecords.InvestorRecord">
+  		<property name="name" value="Bethesda" />
+  		<property name="sector" value="videogames" />
+  		<property name="investingStatement" value="selling lies" />
+  		<property name="stars" value="1" />
+  	</bean>
+  	
+  	<bean id="investorRecord5" class="acme.entities.investorRecords.InvestorRecord">
+  		<property name="name" value="Mikasa" />
+  		<property name="sector" value="sports" />
+  		<property name="investingStatement" value="sports equipment" />
+  		<property name="stars" value="4" />
+  	</bean>
+  	
+  	<!-- Challenges -->
+  	
   	<bean id="challenge1" class="acme.entities.challenges.Challenge">
 		<property name="title" value="Challenge 1" />
 		<property name="deadline" value="2020/05/10 10:55" />
