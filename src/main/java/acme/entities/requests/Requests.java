@@ -11,6 +11,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -45,7 +46,7 @@ public class Requests extends DomainEntity {
 	private String				description;
 
 	@NotNull
-	private double				reward;
+	private Money				reward;
 
 	// Derived attributes -----------------------------------------------------
 

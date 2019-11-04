@@ -45,6 +45,8 @@ master.menu.authenticated.offers.list = Lista de ofertas
 master.menu.authenticated.challenges.list = Lista de desafios
 master.menu.authenticated.companyRecords.list = Lista de compañias
 master.menu.authenticated.announcement.list = Lista de anuncios
+master.menu.authenticated.investorRecords.list = Lista de Inversores
+
 
 # master.menu.administrator ###################################################
 

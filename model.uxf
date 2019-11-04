@@ -183,7 +183,7 @@ bg=orange</panel_attributes>
       <x>441</x>
       <y>266</y>
       <w>140</w>
-      <h>49</h>
+      <h>56</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
 Provider
@@ -387,7 +387,7 @@ has v</panel_attributes>
 + phoneNumber: String {NotBlank, Pattern} 
 + email: String {NotBlank, Pattern} 
 + isIncorporated: Boolean
-+ stars: Integer {NotNull, Range(0-5)}</panel_attributes>
++ stars: Integer {Range(0-5)}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -403,7 +403,7 @@ has v</panel_attributes>
 + name: String {NotBlank} 
 + sector: String {NotBlank}
 + investingStatement: String {NotBlank} 
-+ stars: Integer {NotNull, Range(0-5)}</panel_attributes>
++ stars: Integer {Range(0-5)}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

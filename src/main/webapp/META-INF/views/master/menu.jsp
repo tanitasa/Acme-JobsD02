@@ -36,6 +36,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.challenges.list" action="/authenticated/challenge/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.companyRecords.list" action="/authenticated/company-record/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+      		<acme:menu-suboption code="master.menu.authenticated.investorRecords.list" action="/authenticated/investor-record/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
